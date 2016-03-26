@@ -18,7 +18,7 @@ class AboutFunctionParameters {
   {
       auto number=100;
       decrement(number);
-      assertEquals(number,FILL_IN_THIS_NUMBER);
+      assertEquals(number, 100);
   }
 
 
@@ -39,9 +39,9 @@ class AboutFunctionParameters {
 
       auto my_array=[4,8,15,16,23];
       wrong_append(my_array,42);
-      assertEquals(my_array.length,FILL_IN_THIS_NUMBER);
+      assertEquals(my_array.length, 5);
       right_append(my_array,42);
-      assertEquals(my_array.length,FILL_IN_THIS_NUMBER);
+      assertEquals(my_array.length, 6);
   }
 
 
@@ -59,8 +59,8 @@ class AboutFunctionParameters {
   {
       int prod;
       int result = sumAndProduct(7, 3, prod);
-      assertEquals(result, FILL_IN_THIS_NUMBER);
-      assertEquals(prod, FILL_IN_THIS_NUMBER);
+      assertEquals(result,  10);
+      assertEquals(prod,    21);
   }
 
   /*-----------------------------------------*/

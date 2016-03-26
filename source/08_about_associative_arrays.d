@@ -11,20 +11,20 @@ class AboutAssociativeArrays
   void creation_and_assignment() {
     int[string] mymap;
     mymap["hello"] = 3;
-    assertEquals(mymap["hello"], FILL_IN_THIS_NUMBER);
+    assertEquals(mymap["hello"], 3);
   }
 
   @Test
   void other_operations() {
     int[string] ages = ["bob" : 20, "joe" : 30, "dan" : 40];
 
-    assertEquals(ages.length, FILL_IN_THIS_NUMBER);
+    assertEquals(ages.length, 3);
 
     auto age = ages["bob"];
-    assertEquals(age, FILL_IN_THIS_NUMBER);
+    assertEquals(age, 20);
 
     ages["bob"] = 77;
-    assertEquals(ages["bob"], FILL_IN_THIS_NUMBER);
+    assertEquals(ages["bob"], 77);
 
     import core.exception: RangeError;
     try
@@ -34,17 +34,17 @@ class AboutAssociativeArrays
     catch (RangeError e)
     {
       // accessing non existing elements raise an exception
-      assertEquals(e.msg, FILL_IN_THIS_STRING);
+      assertEquals(e.msg, "Range violation");
     }
 
     ages["steven"] = 66;  //new ones can be added
-    assertEquals(ages["steven"], FILL_IN_THIS_NUMBER);
+    assertEquals(ages["steven"], 66);
 
-    assertEquals(ages.length, FILL_IN_THIS_NUMBER);
+    assertEquals(ages.length, 4);
 
     ages.remove("joe");  // you can also remove elements
 
-    assertEquals(ages.length, FILL_IN_THIS_NUMBER);
+    assertEquals(ages.length, 3);
   }
 
 }

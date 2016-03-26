@@ -17,24 +17,24 @@ class AboutBasics
 
   @Test
   void about_basics() {
-    assertEquals(true, FILL_IN_TRUE_OR_FALSE, "what is truth ?");
-    assertEquals(5 % 2, FILL_IN_THIS_NUMBER);
-    assertEquals(5 * 2, FILL_IN_THIS_NUMBER);
-    assertEquals(5 ^ 2, FILL_IN_THIS_NUMBER);
+    assertEquals(true, true, "what is truth ?");
+    assertEquals(5 % 2, 1);
+    assertEquals(5 * 2, 10);
+    assertEquals(5 ^ 2, 7);
 
     //zero values
     int x;
-    assertEquals(x, FILL_IN_THIS_NUMBER);
+    assertEquals(x, 0);
 
     //for all types
     float f;
-    assertEquals(isNaN(f), FILL_IN_TRUE_OR_FALSE);  // float equality is not defined, e.g. nan != nan
+    assertEquals(isNaN(f), true);  // float equality is not defined, e.g. nan != nan
 
     k c;  //also composite gets default initializers
 
-    assertEquals(c.x, FILL_IN_THIS_NUMBER);
-    assertEquals(isNaN(c.f), FILL_IN_TRUE_OR_FALSE);
-    assertEquals(c.s, FILL_IN_THIS_STRING);
+    assertEquals(c.x, 0);
+    assertEquals(isNaN(c.f), true);
+    assertEquals(c.s, null);
   }
 
 }

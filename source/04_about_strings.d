@@ -9,10 +9,10 @@ class AboutStrings {
   @Test
   public void stringSlicing() {
     auto sentence = "The quick brown fox";
-    assertEquals(sentence[0], FILL_IN_THIS_CHAR);
-    assertEquals(sentence[1..3], FILL_IN_THIS_STRING);
-    assertEquals(sentence[$-1], FILL_IN_THIS_CHAR);
-    assertEquals(sentence[$-3..$], FILL_IN_THIS_STRING);
+    assertEquals(sentence[0], 'T');
+    assertEquals(sentence[1..3], "he");
+    assertEquals(sentence[$-1], 'x');
+    assertEquals(sentence[$-3..$], "fox");
   }
 
   @Test
@@ -20,7 +20,7 @@ class AboutStrings {
     auto str1 = "Hello";
     auto str2 = " World";
     auto str = str1 ~ str2;
-    assertEquals(str, FILL_IN_THIS_STRING);
+    assertEquals(str, "Hello World");
   }
 
   @Test
@@ -28,7 +28,7 @@ class AboutStrings {
     auto str = "hello";
     char[] s = "hello".dup;
     s[0] = 'H';
-    assertEquals(s, FILL_IN_THIS_STRING);
+    assertEquals(s, "Hello");
   }
 
   @Test
@@ -37,8 +37,8 @@ class AboutStrings {
     wstring w = "résumé"w;
     dstring d = "résumé"d;
 
-    assertEquals(s.length, FILL_IN_THIS_NUMBER);
-    assertEquals(w.length, FILL_IN_THIS_NUMBER);
-    assertEquals(d.length, FILL_IN_THIS_NUMBER);
+    assertEquals(s.length, 8);
+    assertEquals(w.length, 6);
+    assertEquals(d.length, 6);
   }
 }

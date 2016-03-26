@@ -11,21 +11,21 @@ class AboutNumbers {
   @Test
   public void IntegersEqual() {
     auto integer = 1;
-    auto expected = FILL_IN_THIS_NUMBER;
+    auto expected = 1;
     assertEquals(expected, integer);
   }
 
   @Test
   public void IntegersHaveSize() {
     int an_integer = 1;
-    assertEquals(int.sizeof, FILL_IN_THIS_NUMBER);
-    assertEquals(an_integer.sizeof, FILL_IN_THIS_NUMBER);
+    assertEquals(int.sizeof, 4);
+    assertEquals(an_integer.sizeof, 4);
   }
 
   // hint: here you may want to use assertLessThan
   @Test
   public void IntegersCanBeNegative() {
     int an_integer = -42;
-    assertEquals(an_integer, 0);
+    assertEquals(an_integer, -42);
   }
 }

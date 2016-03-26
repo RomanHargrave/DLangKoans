@@ -18,8 +18,8 @@ class AboutTemplates {
   public void functionTemplates()
   {
     auto val1 = twice!int(2);  // instantiation
-    assertEquals(val1, FILL_IN_THIS_NUMBER);
+    assertEquals(val1, 4);
     auto val2 = twice("hello");
-    assertEquals(val2, FILL_IN_THIS_STRING);
+    assertEquals(val2, "hellohello");
   }
 }

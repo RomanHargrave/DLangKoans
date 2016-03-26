@@ -10,25 +10,25 @@ class AboutChars
   @Test
   public void lonely_char() {
     char a_character = 'a';
-    assertEquals(a_character, FILL_IN_THIS_CHAR);
+    assertEquals(a_character, 'a');
   }
 
   @Test
   public void chars_have_a_size() {
     char a_character = 'b';
-    assertEquals(a_character.sizeof, FILL_IN_THIS_CHAR);
+    assertEquals(a_character.sizeof, 1);
   }
 
   @Test
   public void chars_are_numbers() {
     char a_character = 'A';
-    assertEquals(cast(int)(a_character), FILL_IN_THIS_NUMBER);
+    assertEquals(cast(int)(a_character), 65);
   }
 
   @Test
   public void more_chars_are_a_string() {
     string some_characters = "Hello World";
-    assertEquals(some_characters.length, FILL_IN_THIS_NUMBER);
+    assertEquals(some_characters.length, 11);
   }
 
   @Test
@@ -36,9 +36,9 @@ class AboutChars
     char  e1 = 'e';
     wchar e2 = 'è';
     dchar e3 = 'é';
-    assertEquals(e1.sizeof,FILL_IN_THIS_NUMBER);
-    assertEquals(e2.sizeof,FILL_IN_THIS_NUMBER);
-    assertEquals(e3.sizeof,FILL_IN_THIS_NUMBER);
+    assertEquals(e1.sizeof,1);
+    assertEquals(e2.sizeof,2);
+    assertEquals(e3.sizeof,4);
   }
 
 }

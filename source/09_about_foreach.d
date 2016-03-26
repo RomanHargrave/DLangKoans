@@ -14,12 +14,12 @@ class AboutForeach
     foreach(x; array){ // simple iteration, what is the scope of 'x'?
       x = x * 2;
     }
-    assertEquals(array[0], FILL_IN_THIS_NUMBER);
+    assertEquals(array[0], 3);
 
     foreach(ref x ; array) { // what is changed ?
       x = x * 2;
     }
-    assertEquals(array[0], FILL_IN_THIS_NUMBER);
+    assertEquals(array[0], 6);
   }
 
   @Test
@@ -30,7 +30,7 @@ class AboutForeach
       k = c;
     }
 
-    assertEquals(k, FILL_IN_THIS_CHAR);
+    assertEquals(k, 'g');
   }
 
   @Test
@@ -49,8 +49,8 @@ class AboutForeach
       v += value - 1900;
     }
 
-    assertEquals(s, FILL_IN_THIS_STRING);
-    assertEquals(v, FILL_IN_THIS_NUMBER);
+    assertEquals(s, "TKSR");
+    assertEquals(v, 205);
   }
 
 

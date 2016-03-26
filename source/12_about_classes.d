@@ -28,6 +28,6 @@ class AboutClasses {
   @Test
   public void inheritance() {
       auto instance = new B;
-      assertEquals(instance.getDoubleValue(), FILL_IN_THIS_NUMBER);
+      assertEquals(instance.getDoubleValue(), 6);
   }
 }

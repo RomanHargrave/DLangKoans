@@ -27,7 +27,7 @@ class AboutDelegates {
   Foo foo = new Foo(3);
   call_me_later = &foo.mymethod;
   auto result=call_me_later(5);      // call mymethod(5)
-  assertEquals(result, FILL_IN_THIS_NUMBER);
+  assertEquals(result, 8);
   }
 
   // --------------------------------------------------------------------------------
@@ -76,8 +76,8 @@ class AboutDelegates {
     b1.Click();
     b2.Click();
     b2.Click();
-    assertEquals(b1.state,FILL_IN_THIS_STRING);
-    assertEquals(b2.state,FILL_IN_THIS_STRING);
+    assertEquals(b1.state, "you clicked 2 times the button OK with color DEFAULT");
+    assertEquals(b2.state, "you clicked 0 times the button UNTITLED with color RED");
   }
   
 

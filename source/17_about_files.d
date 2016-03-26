@@ -29,7 +29,7 @@ class AboutFiles {
     import std.string;
     auto myfile=File(FILENAME,"r");
     auto data=strip(myfile.readln());
-    auto expected = FILL_IN_THIS_STRING;
+    auto expected = "some data";
     assertEquals(expected, data);
   }
 

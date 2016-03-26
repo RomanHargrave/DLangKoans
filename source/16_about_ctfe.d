@@ -33,7 +33,7 @@ class AboutCTFE {
   public void simple_CTFE() {
     auto a = 1 + 2;  // this expression is evaluated by the compiler (like in C)
     enum b = sum(3, 4);  // but also this
-    assertEquals(b, FILL_IN_THIS_NUMBER);
+    assertEquals(b, 7);
   }
 
 
@@ -41,7 +41,7 @@ class AboutCTFE {
   public void advanced_CTFE() {
     auto x = factorial(2);
     enum y = factorial(3);
-    assertEquals(x + y, FILL_IN_THIS_NUMBER);
-    assertEquals(counter, FILL_IN_THIS_NUMBER);
+    assertEquals(x + y, 8);
+    assertEquals(counter, 1);
   }
 }

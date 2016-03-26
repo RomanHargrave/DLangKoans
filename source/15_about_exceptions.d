@@ -33,8 +33,8 @@ class AboutExceptions {
         result = 2;
     }
 
-    assertEquals(area1,FILL_IN_THIS_NUMBER);
-    assertEquals(result,FILL_IN_THIS_NUMBER);
+    assertEquals(area1,     0);
+    assertEquals(result,    2);
  }
 
 }

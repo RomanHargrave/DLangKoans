@@ -11,6 +11,6 @@ class AboutPointers {
     int a = 3;
     int *p = &a;
     *p = 4;
-    assertEquals(a, FILL_IN_THIS_NUMBER);
+    assertEquals(a, 4);
   }
 }

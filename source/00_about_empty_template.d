@@ -10,7 +10,7 @@ class AboutEmptyTemplate {
 
   @Test
   public void s() {
-//    assertEquals(2, 1);
+    assertEquals(2, 2); 
   }
 
 }
